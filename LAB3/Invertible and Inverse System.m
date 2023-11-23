@@ -1,0 +1,9 @@
+n=[0:5];
+Xn=[0:5];
+y=sin(2*pi*Xn);
+subplot(2,1,1)
+stem(n,Xn,"filled")
+title("X[n]")
+subplot(2,1,2)
+stem(n,y,"filled")
+title("Y[n]")
