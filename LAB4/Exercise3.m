@@ -1,0 +1,12 @@
+tx=[1:0.1:5];
+th=[2:0.1:7];
+x=ones(1,length(tx));
+h=ones(1,length(th));
+ty=[3:0.1:12];
+Ts=0.1;
+y=conv(x,h)*Ts;
+ny=[3:0.1:12];
+stem(ny,y,'filled');
+xlabel('Time');
+ylabel('Amplitude');
+title('y[n]');
